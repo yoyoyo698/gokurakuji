@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "メイリオ", sans-serif;
+    background: #f5f2ea;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+.hero-header {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("images/top.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #333;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.35);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-header h1 {
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+.hero-header h2 {
+    color: white;
+    border: none;
+    font-size: 40px;
+}
+
+.hero-header p {
+    font-size: 26px;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+h2 {
+    color: #2f4f3f;
+    border-bottom: 2px solid #d9c9a3;
+    padding-bottom: 10px;
+    font-size: 34px;
+}
+
+h3 {
+    color: #2f4f3f;
+    font-size: 28px;
+    margin-top: 35px;
+}
+
+p {
+    font-size: 22px;
+}
+
+li {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+ul {
+    line-height: 1.9;
+}
+
+strong {
+    color: #2f4f3f;
+}
+
+a {
+    color: #2f4f3f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.call-button {
+    display: inline-block;
+    background: #2f4f3f;
+    color: white;
+    padding: 18px 30px;
+    border-radius: 8px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.call-button:hover {
+    opacity: 0.9;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.photo-gallery img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.map {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+footer {
+    background: #2f4f3f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .hero-header {
+        height: 350px;
+        background-size: cover;
+    }
+
+    .hero-header h1 {
+        font-size: 42px;
+    }
+
+    .hero-header h2 {
+        font-size: 28px;
+    }
+
+    p,
+    li {
+        font-size: 20px;
+    }
+
+    .call-button {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-gallery img {
+        width: 90%;
+    }
+}
